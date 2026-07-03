@@ -19,5 +19,5 @@ python add_monthly_weather.py
 
 # Important Tips & Expectations:
 ​Speed: Due to free-tier API restrictions, looking up the location and climate data takes about 1.5 seconds per unique city. If your CSV contains thousands of entries, this script will take several hours to complete.
-​Safe Interruption: You don't have to leave it running all at once. You can stop it by pressing Ctrl + C inside your terminal. When you run the script again later, it will inspect world_cities_with_monthly_weather.csv, see which rows are already complete, and automatically pick up from where you left off.
-​Testing: If you want to verify that it outputs correctly first without waiting, you can replace df = pd.read_csv(input_filename) with df = pd.read_csv(input_filename).head(20) to quickly test the script on just the first 20 cities.
+​Safe Interruption: You don't have to leave it running all at once. You can stop it by pressing `Ctrl + C` inside your terminal. When you run the script again later, it will inspect `world_cities_with_monthly_weather.csv`, see which rows are already complete, and automatically pick up from where you left off.
+​Testing: If you want to verify that it outputs correctly first without waiting, you can replace `df = pd.read_csv(input_filename)` with `df = pd.read_csv(input_filename).head(20)` to quickly test the script on just the first 20 cities.
