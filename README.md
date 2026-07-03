@@ -1,5 +1,5 @@
 # Approximately_Weather_Temperature_Per_Month_Of_Cities_In_The_World
-To add columns for all 12 months with their approximate average monthly temperatures to your `world-cities (1).csv` file, you can use Python with pandas, geopy (to get the coordinates), and the requests library to fetch data from the free Open-Meteo Climate API.
+To add columns for all 12 months with their approximate average monthly temperatures to your `world-cities-with-continents.csv` file, you can use Python with pandas, geopy (to get the coordinates), and the requests library to fetch data from the free Open-Meteo Climate API.
 ​Since your CSV file likely contains thousands of rows, making individual API requests for every single row will take a long time and might hit API rate limits. To solve this, the script below uses caching (so it only looks up each unique city-country combination once) and implements a progress-saving mechanism. If the script is stopped or interrupted, you can run it again, and it will pick up right where it left off without losing your data.
 # ​1. Prerequisites
 ​Open your terminal or command prompt and install the required libraries:
@@ -10,7 +10,7 @@ pip install pandas geopy requests
 ​Create a new file named `add_monthly_weather.py` in the same directory where your world-cities (1).csv file is saved.
 
 # 3. How to Run it:
-1. Save your `world-cities (1).csv` file in a dedicated folder.
+1. Save your `world-cities-with-continents.csv` file in a dedicated folder.
 2. Place the script file `add_monthly_weather.py` into the exact same folder.
 3. Open your command terminal, navigate to that folder, and execute:
 ```text
