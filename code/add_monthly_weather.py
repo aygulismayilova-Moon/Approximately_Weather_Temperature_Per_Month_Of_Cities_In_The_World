@@ -24,7 +24,7 @@ def fetch_monthly_temperatures(lat, lon):
     return [None] * 12
 
 def main():
-    input_filename = 'world-cities (1).csv'
+    input_filename = 'world-cities-with-continents.csv'
     output_filename = 'world_cities_with_monthly_weather.csv'
     
     if not os.path.exists(input_filename):
